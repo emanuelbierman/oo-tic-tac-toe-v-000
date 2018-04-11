@@ -63,13 +63,13 @@ class TicTacToe
 
   def won?
     match = []
-      binding.pry
     if @board.count("X") > @board.count("O")
       @board.each_with_index do |element, index|
         if element == "X"
           match << index
         end
       end
+      binding.pry
       WIN_COMBINATIONS.each_with_index do |element, index|
           if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
             return WIN_COMBINATIONS[index]
