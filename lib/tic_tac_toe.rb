@@ -152,7 +152,7 @@ class TicTacToe
     end
 
     if winner == "X" || winner == "O"
-      puts "Congratulations #{winner(board).strip}!"
+      puts "Congratulations #{winner.strip}!"
     elsif draw?
       puts "Cat\'s Game!"
     end
