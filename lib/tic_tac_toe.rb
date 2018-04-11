@@ -81,7 +81,6 @@ class TicTacToe
         if element == "O"
           match << index
         end
-        return match
       end
       WIN_COMBINATIONS.each_with_index do |element, index|
         if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
