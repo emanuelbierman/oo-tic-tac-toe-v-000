@@ -70,12 +70,11 @@ class TicTacToe
         end
       end
       WIN_COMBINATIONS.each_with_index do |element, index|
-          if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
-            return WIN_COMBINATIONS[index]
-          else
-            return false
-          end
-  binding.pry
+        if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
+          return WIN_COMBINATIONS[index]
+        else
+          return false
+        end
       end
     elsif @board.count("O") > @board.count("X")
       @board.each_with_index do |element, index|
@@ -84,11 +83,11 @@ class TicTacToe
         end
       end
       WIN_COMBINATIONS.each_with_index do |element, index|
-          if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
-            return WIN_COMBINATIONS[index]
-          else
-            return false
-          end
+        if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
+          return WIN_COMBINATIONS[index]
+        else
+          return false
+        end
       end
     else
       return false
