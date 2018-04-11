@@ -75,8 +75,8 @@ class TicTacToe
           else
             return false
           end
+  binding.pry
       end
-      binding.pry
     elsif @board.count("O") > @board.count("X")
       @board.each_with_index do |element, index|
         if element == "O"
