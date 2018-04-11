@@ -78,6 +78,25 @@ class TicTacToe
     else
       return false
     end
+    case 
+    when WIN_COMBINATIONS[0] & match == WIN_COMBINATIONS[0]
+      return WIN_COMBINATIONS[0]
+    when WIN_COMBINATIONS[1] & match == WIN_COMBINATIONS[1]
+      return WIN_COMBINATIONS[1]
+    when WIN_COMBINATIONS[2] & match == WIN_COMBINATIONS[2]
+      return WIN_COMBINATIONS[2]
+    when WIN_COMBINATIONS[3] & match == WIN_COMBINATIONS[3]
+      return WIN_COMBINATIONS[3]
+    when WIN_COMBINATIONS[4] & match == WIN_COMBINATIONS[4]
+      return WIN_COMBINATIONS[4]
+    when WIN_COMBINATIONS[5] & match == WIN_COMBINATIONS[5]
+      return WIN_COMBINATIONS[5]
+    when WIN_COMBINATIONS[6] & match == WIN_COMBINATIONS[6]
+      return WIN_COMBINATIONS[6]
+    when WIN_COMBINATIONS[7] & match == WIN_COMBINATIONS[7]
+      return WIN_COMBINATIONS[7]
+    end
+
     WIN_COMBINATIONS.each_with_index do |element, index|
       if (WIN_COMBINATIONS[index]) & match == WIN_COMBINATIONS[index]
           return WIN_COMBINATIONS[index]
